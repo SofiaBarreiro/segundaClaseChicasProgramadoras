@@ -1,10 +1,7 @@
 
 $(document).ready(function(){
 
-    resultado = 2 +2;
-
-    
-
+    resultado = 0;
 
     comportamientos();
 });
@@ -18,12 +15,8 @@ function comportamientos(){
        // $("img").fadeIn(100);
         $("img").show();
         $('[data-toggle="popover"]').popover();
-    
-    });
-
-
-    $('img').hover(function(){
         $('img').attr('data-content',resultado).data('bs.popover').setContent();
     });
 
+    
 }
